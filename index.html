@@ -1,0 +1,103 @@
+<!--Collapse açılıp kapanan yazı için buton-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>collapse example</title>
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    
+    <style>
+    
+        body{
+            width: 70%;
+            margin: 50px auto;
+            border: 1px solid lightgray;
+            text-align: center;
+        }
+       
+        
+        
+        
+    </style>
+    
+</head>
+
+
+
+<body>
+   
+   
+   
+   
+   
+   <!--Butona tıklayınca metin açılsın //Collaps-->
+   <p >
+       <a href="#collapseText" class="btn btn-primary" data-toggle="collapse">
+           Göster
+       </a>
+       
+   </p>
+   
+   <div id="collapseText" class="collapse">
+       <div class="card card-body">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, sapiente. Quidem assumenda excepturi ratione necessitatibus nihil veniam beatae, voluptas fuga labore unde delectus dolorem voluptatem velit ex nesciunt explicabo voluptates.
+       </div>
+    
+   </div>
+   
+   
+   
+   
+   
+   
+ <!--baslikYazıya tıklayınca metin açılsın //Accordion-->
+   
+   <div id="accordion">
+           <div class="card">
+              <div class="card-header">
+                  <h5>
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">
+                          Yazı Metni #1
+                      </button>
+                  </h5>
+              </div>
+              
+              <div id="collapse1" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, laborum. Alias beatae quis sit culpa, totam, officia deleniti cupiditate porro pariatur? Eaque perspiciatis culpa, possimus totam iure magni voluptatum explicabo.
+                  </div>
+              </div>
+              
+              
+              
+               <!--2.metin copy paste-->
+              
+              
+              <div class="card-header">
+                  <h5>
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">
+                          Yazı Metni #2
+                      </button>
+                  </h5>
+              </div>
+              
+              <div id="collapse2" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, laborum. Alias beatae quis sit culpa, totam, officia deleniti cupiditate porro pariatur? Eaque perspiciatis culpa, possimus totam iure magni voluptatum explicabo.
+                  </div>
+              </div>
+              
+           </div>
+    
+   </div>
+   
+   
+   
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
